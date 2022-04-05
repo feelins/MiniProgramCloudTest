@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/me/me",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#EA5149",
+    "navigationBarTitleText": "城堡守卫者1543",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list":[
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/video.png",
+        "selectedIconPath": "images/video_avtive.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "iconPath": "images/doc.png",
+        "selectedIconPath": "images/doc_active.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的我",
+        "iconPath": "images/config.png",
+        "selectedIconPath": "images/config_active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
