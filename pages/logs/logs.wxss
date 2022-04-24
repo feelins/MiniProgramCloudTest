@@ -4,5 +4,6 @@
   padding: 40rpx;
 }
 .log-item {
-  margin: 10rpx;
+  text-align: left;
+  padding: 10px 10px 0 0;
 }
