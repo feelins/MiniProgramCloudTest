@@ -13,7 +13,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    const ui = wx.getStorageSync('userinfo')
+    this.setData({
+      userinfo: ui,
+      openid: ui.openid
+    })
   },
   
   /**
@@ -29,8 +33,13 @@ Page({
          openid:res.result.openid,
          userinfo: e.detail.userInfo
        })
+
+       // 将openid字段加入到userInfo变量中， 这句话不懂
+       that.data.userinfo.openid = that.data.openid
+       // 打印
        console.log("openid", that.data.openid)
        console.log("userinfo", that.data.userinfo)
+       wx.setStorageSync('userinfo', that.data.userinfo)
      },
      fail:res=>{
       console.log("调用云函数失败")
